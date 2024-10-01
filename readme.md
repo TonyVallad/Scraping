@@ -2,7 +2,7 @@
 
 This script scrapes job listings for Python positions from a sample webpage and prints the job title, company, location, and application link for each listing.
 
-<img src="https://pbs.twimg.com/media/FofpuY3WAAEx78s?format=png&name=small" width="500"/>
+<img src="https://raw.githubusercontent.com/TonyVallad/Scraping/refs/heads/main/Script_screenshot.png" width="750"/>
 
 ## Requirements
 
