@@ -1,16 +1,17 @@
 # Python Job Scraper
 
-This script scrapes job listings for Python positions from a sample webpage and prints the job title, company, location, and application link for each listing.
+<img src="https://raw.githubusercontent.com/TonyVallad/Scraping/refs/heads/main/Script_screenshot.png" width="850"/>
 
-<img src="https://raw.githubusercontent.com/TonyVallad/Scraping/refs/heads/main/Script_screenshot.png" width="750"/>
+This script scrapes job listings from a mock job board at [Real Python's Fake Jobs](https://realpython.github.io/fake-jobs/). It identifies job postings related to "Python" and prints key details such as the job title, company name, location, and a link to apply.
 
-## Requirements
+## Prerequisites
 
 - Python 3.x
-- `requests` library
-- `beautifulsoup4` library
+- The following Python libraries are required:
+  - `requests`: To send HTTP requests to the website.
+  - `beautifulsoup4`: To parse the HTML content of the website.
 
-You can install the required libraries using pip:
+You can install the necessary libraries using `pip`:
 
 ```bash
 pip install requests beautifulsoup4
@@ -18,37 +19,41 @@ pip install requests beautifulsoup4
 
 ## Usage
 
-1. Clone the repository or download the script.
-2. Run the script using Python:
+1. Clone or download the repository containing the `scraping.py` script.
+2. Ensure that you have all the required libraries installed.
+3. Run the script from the command line:
 
-   ```bash
-   python job_scraper.py
-   ```
-
-3. The script will output the job listings for Python-related positions.
-
-## How It Works
-
-1. **HTTP Request**: The script sends a GET request to the specified URL containing the job listings.
-2. **HTML Parsing**: It uses BeautifulSoup to parse the HTML content of the page.
-3. **Job Extraction**: The script finds job listings in the HTML structure by searching for specific elements and classes.
-4. **Filtering Python Jobs**: It filters the job titles to include only those that contain the word "Python".
-5. **Output**: Finally, it prints the title, company name, location, and application link for each Python job.
-
-## Example Output
-
-```
-Job Title 1
-Company 1
-Location 1
-Apply here: http://example.com/apply1
-
-Job Title 2
-Company 2
-Location 2
-Apply here: http://example.com/apply2
+```bash
+python scraping.py
 ```
 
-## Contributing
+## Output
 
-Since this is a just a training project, I do not expect any contributions.
+The script will print the following details for each job listing that includes the word "Python" in the job title:
+
+- Job Title
+- Company Name
+- Location
+- Link to Apply
+
+For example:
+
+```
+Senior Python Developer
+Company ABC
+New York, NY
+Apply here: https://realpython.github.io/fake-jobs/job-1
+
+Junior Python Developer
+Company XYZ
+San Francisco, CA
+Apply here: https://realpython.github.io/fake-jobs/job-2
+```
+
+## Notes
+
+This project is for educational purposes only. The job board being scraped is a fake job listings page created by Real Python for web scraping tutorials.
+
+## License
+
+This project is open-source and free to use.
